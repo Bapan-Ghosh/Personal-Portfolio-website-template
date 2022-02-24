@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+.sidebar{
+    position: absolute; /* Jate slide ta page er uppor diye bar hoi*/
+    font-family: 'Fira Sans', sans-serif;
+    background-color: rgb(167, 74, 74);
+    width: 15vw;
+    height: 100vh;
+    color: white;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav{
+    padding: 45px;
+}
+
+.sidebar nav li{
+     list-style: none;
+     font-size: 19px;
+     padding: 20px 0;
+     
+}
+
+.sidebar nav li a{
+    color:white;
+    text-decoration: none;
+}
+
+
+.sidebar nav li:hover a{
+    color: rgb(112, 13, 13);
+    cursor: pointer;
+}
+
+.main{
+    /* background-color: yellow; */
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+}
+
+.infoContainer{
+    /* background-color: palevioletred; */
+    width: 80vw;
+    height: 58vh;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.devPic img{
+    height: 58vh;
+}
+
+.devInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Source Code Pro', monospace;    
+    
+}
+
+.hello{
+    font-size: 50px;
+    
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+.about{
+    font-size: 40px;
+}
+
+.moreabout{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 22px;
+}
+
+.buttons button{
+    margin-top: 24px;
+    padding: 13px;
+    border-radius: 20px;
+    background-color: rgb(167, 74, 74);
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: rgb(112, 13, 13);
+}
+
+.contactform{
+    display: flex;
+    height: 100vh;
+    /* justify-content: center;
+    align-items: center; */
+    width:60%;
+    margin: 40px auto 0;
+    flex-direction: column;
+    font-family: 'Fira Sans', sans-serif;   
+}
+.contactform h1{
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;  
+}
+
+.mb{
+    margin-top: 20px;
+}
+
+input[type="email"],
+input[type="number"]{
+     width: 100%;
+     padding: 2%;
+     border: 1px solid gray;
+     border-radius: 3px;
+}
+
+.submit
+{
+    background-color: rgb(167, 74, 74);
+    color:white;
+    padding: 10px;
+    border: 0px;
+    border-radius: 3px; 
+}
+
+.submit:hover{
+    background-color: rgb(112, 13, 13);
+    cursor: pointer;
+    padding: 12px;  
+}
+
+.blogcontainer{
+    width: 80%;
+    margin: 40px auto 0 ;
+}
+
+.blogcontainer h1, .blogItem h2{
+    font-family: 'Source Code Pro', monospace;  
+    margin: 5px 0; 
+}
+
+.blogItem{
+   margin-top: 30px;
+}
+
+.intro{
+    width: 80%;
+    margin: 40px auto 0 ;
+}
+
+.blogItem p{
+    margin-top: 30px;
+    font-family: 'Gideon Roman', cursive;
+}
+
+.intro h2{
+    font-family: 'Source Code Pro', monospace;
+    margin: 10px;
+}
+
+.intro p{
+    margin: 10px;
+    font-family: 'Gideon Roman', cursive;
+}
+
+.skillcontainer{
+   padding: 12px;
+}
+
+.skill{
+    height: 10px;
+    background-color: red;
+}
+
+.skillItem{
+    display: flex;
+    align-items: center;
+}
+
+.h100{
+   width: 40%;
+}
+
+.f50{
+  width: 20%;
+}
+
+.f30{
+  width: 10%;
+}
+
+/* media */
+
+@media (max-width : 1342px) {
+    .sidebar{
+        width: 50%;
+    }
+
+    .devPic{
+        display: none;
+    }
+     /* For contact */
+    .contactform{
+        height: 100vh;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* flex-direction: column; */
+        font-family: 'Fira Sans', sans-serif;
+        width: 80%;
+        margin: 30px auto 0;   
+    }
+    .contactform h1{
+        text-align: center;
+        font-family: 'Source Code Pro', monospace;  
+    }
+    
+}
+
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+.hamburger{
+    cursor: pointer;
+    position: absolute;
+    /* top: 10px; */
+    left: 10px;
+}    
+
+.close{
+    margin-left: 155px;
+}
